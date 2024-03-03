@@ -1,0 +1,222 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 20vw;
+    height: 100vh;
+    background-color: #0099ff;
+    text-align: center;
+    color: #ededed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar h2{
+    margin-top: 2em;
+}
+
+.sidebar .loc{
+    margin-top: 6em;
+}
+
+.sidebar .phone{
+    margin-top: 6em;
+}
+
+.sidebar .email{
+    margin-top: 6em;
+}
+
+.garis{
+    margin-top: 1em;
+    margin-left: 2em;
+    border-radius: 10px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+}
+
+.content{
+    background-color: #ededed;
+    width: 80vw;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 2em;
+    margin-left: 32em;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 3em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s all ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #0099ff;
+}
+
+.active{
+    padding: 13px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ededed;
+    background-color: #0099ff;
+    transition: .8s all ease-in-out;
+}
+
+.active:hover{
+    color: #0099ff;
+    background-color: #ededed;
+}
+
+.content .description{
+    margin-left: 2em;
+    margin-top: 5em;
+}
+
+.content .description h4,h2,p{
+    margin-top: .5em;
+}
+
+h4::selection,h2::selection,p::selection,a::selection{
+    background-color: #0099ff;
+}
+
+.content .description h2{
+    font-size: 30px;
+}
+
+.button{
+    width: 30vw;
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button p{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.button p::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ededed;
+    z-index: -1;
+    transition: .5s all ease-in-out;
+}
+
+.button .hire a:hover{
+    color: #0099ff;
+    transition: .3s all ease-in-out;
+}
+
+.button p:hover:before{
+    width: 100%;
+}
+
+.button p:nth-child(2)::before{
+    background-color: #0099ff;
+}
+
+.button .talk a:hover{
+    color: #ededed;
+    transition: .3s all ease-in-out;
+}
+
+.hire{
+    width: 160px;
+    padding: 13px;
+    margin-top: 2em;
+    margin-left: 2em;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #0099ff;
+    border: 1px solid #0099ff;
+}
+
+.hire a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.hire:active{
+    transform: scale(.8);
+    transition: .3s all ease-in-out;
+}
+
+.talk{
+    width: 160px;
+    padding: 13px;
+    margin-top: 2em;
+    margin-left: 2em;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #0099ff;
+}
+
+.talk a{
+    text-align: center;
+    text-decoration: none;
+    color: #0099ff;
+    background: transparent;
+}
+
+.talk:active{
+    transform: scale(.8);
+    transition: .3s all ease-in-out;
+}
+
+.text{
+    margin-top: 5em;
+    margin-bottom: 1.5em;
+    width: 45vw;
+    display: flex;
+    margin-left: 2em;
+    justify-content: space-between;
+}
+
+.text a{
+    text-decoration: none;
+    color: #0099ff;
+}
+
+.image{
+    margin-left: 1em;
+    display: flex;
+}
+
+.image img{
+    margin-left: 1em;
+}
+
+.icon{
+    margin-left: 2.5em;
+}
